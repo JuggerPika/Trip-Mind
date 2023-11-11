@@ -429,7 +429,7 @@
 .header-main-aside-card-1 {
     border-radius: 1rem;
     background: linear-gradient(359deg, #000 -9.72%,
-     rgba(0, 0, 0, 0.00) 49.49%), url(../img/sectionHeader/imgIsland\ 1.png),
+     rgba(0, 0, 0, 0.00) 49.49%), url(./img/sectionHeader/imgIsland\ 1.png),
      lightgray 50% / cover no-repeat;
 
     width: 17rem;
@@ -441,7 +441,7 @@
 .header-main-aside-card-2 {
     border-radius: 1rem;
     background: linear-gradient(359deg, #000 -9.72%,
-     rgba(0, 0, 0, 0.00) 49.49%), url(../img/sectionHeader/imgIsland\ 2.png),
+     rgba(0, 0, 0, 0.00) 49.49%), url(./img/sectionHeader/imgIsland\ 2.png),
      lightgray 50% / cover no-repeat;
 
     width: 17rem;
@@ -453,7 +453,7 @@
 .header-main-aside-card-3 {
     border-radius: 1rem;
     background: linear-gradient(359deg, #000 -9.72%,
-     rgba(0, 0, 0, 0.00) 49.49%), url(../img/sectionHeader/imgIsland\ 3.png),
+     rgba(0, 0, 0, 0.00) 49.49%), url(./img/sectionHeader/imgIsland\ 3.png),
      lightgray 50% / cover no-repeat;
 
     width: 17rem;
@@ -820,7 +820,7 @@
 .section-tour-container{
     border-radius: 1rem;
     background: linear-gradient(2deg, rgba(0, 0, 0, 0.80) -9.42%,
-     rgba(0, 0, 0, 0.00) 38.18%), url(../img/sectionTour/imgHawaii1.png),
+     rgba(0, 0, 0, 0.00) 38.18%), url(./img/sectionTour/imgHawaii1.png),
      lightgray 50% / cover no-repeat;
 
     width: 40rem;
@@ -1042,7 +1042,7 @@
 
 /* Section Form */
 .section-form {
-    background-image: url(../img/sectionForm/imgForm\ 1.png);
+    background-image: url(./img/sectionForm/imgForm\ 1.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1268,7 +1268,7 @@
 /* section card image with captions */
 .section-feedback-card {
     background: linear-gradient(2deg, rgba(0, 0, 0, 0.70) -9.42%,
-     rgba(0, 0, 0, 0.00) 38.18%), url(../img/sectionFeedback/imgHawaii\ 1.png),
+     rgba(0, 0, 0, 0.00) 38.18%), url(./img/sectionFeedback/imgHawaii\ 1.png),
      lightgray 50% / cover no-repeat;
 
     border-radius: 1rem;

@@ -21,7 +21,7 @@
 
 /* Header */
 .header {
-    background-image: url(../img/background/back.png);
+    background-image: url(./img/background/back.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center; 

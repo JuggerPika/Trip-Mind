@@ -429,7 +429,7 @@
 .header-main-aside-card-1 {
     border-radius: 1rem;
     background: linear-gradient(359deg, #000 -9.72%,
-     rgba(0, 0, 0, 0.00) 49.49%), url(./img/sectionHeader/imgIsland\ 1.png),
+     rgba(0, 0, 0, 0.00) 49.49%), url(../img/sectionHeader/imgIsland1.png),
      lightgray 50% / cover no-repeat;
 
     width: 17rem;
@@ -441,7 +441,7 @@
 .header-main-aside-card-2 {
     border-radius: 1rem;
     background: linear-gradient(359deg, #000 -9.72%,
-     rgba(0, 0, 0, 0.00) 49.49%), url(./img/sectionHeader/imgIsland\ 2.png),
+     rgba(0, 0, 0, 0.00) 49.49%), url(../img/sectionHeader/imgIsland2.png),
      lightgray 50% / cover no-repeat;
 
     width: 17rem;
@@ -453,7 +453,7 @@
 .header-main-aside-card-3 {
     border-radius: 1rem;
     background: linear-gradient(359deg, #000 -9.72%,
-     rgba(0, 0, 0, 0.00) 49.49%), url(./img/sectionHeader/imgIsland\ 3.png),
+     rgba(0, 0, 0, 0.00) 49.49%), url(../img/sectionHeader/imgIsland3.png),
      lightgray 50% / cover no-repeat;
 
     width: 17rem;

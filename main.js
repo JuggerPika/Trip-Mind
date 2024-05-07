@@ -14,7 +14,7 @@ const hoursEl = document.getElementById('hours');
 const minsEl = document.getElementById('mins');
 const secondEl = document.getElementById('second');
 
-const newTour = '30 Nov 2023';
+const newTour = '16 Aug 2023';
 
 function countDown(){
 	const newTourDate = new Date(newTour);

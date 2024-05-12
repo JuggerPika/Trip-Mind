@@ -99,7 +99,7 @@
           </div>
 
           <!-- menu -->
-          <div class="header_nav_burger">
+          <div class="header_nav_burger" id="burger">
             <span></span>
             <span></span>
             <span></span>
@@ -107,46 +107,42 @@
         </nav>
 
         <!-- menu onclick-->
-        <div class="menu">
-          <h2>Меню</h2>
+        <div class="menu" id="menu">
+          <div class="menu__aside" id="menu__aside">
+            <h2 class="menu__aside__title">Меню</h2>
 
-          <ul class="menu-view">
-            <a href="./pages/tour.html" class="menu-view-item">
-              <li class="menu-view-item">Переглянути тури</li>
-            </a>
-            <a href="./pages/feedback.html" class="menu-view-item"
-              ><li class="menu-view-item">Відгуки</li></a
-            >
-            <a href="./pages/contact.html" class="menu-view-item">
-              <li class="menu-view-item">Контакти</li>
-            </a>
-          </ul>
+            <div class="menu__aside__links">
+              <a href="./pages/tour.html" class="menu__aside__link__item">Всі тури</a>
+              <a href="./pages/feedback.html" class="menu__aside__link__item">Відгуки</a>
+              <a href="./pages/contact.html" class="menu__aside__link__item">Контакти</a>
+            </div>
 
-          <div class="counter">
-            <h4 class="counter-title">
-              Віддлік до наступної<br />
-              поїздки
-            </h4>
-
-            <div class="countdown-container">
-              <div class="countdonw-el days-c">
-                <p class="big-text" id="days">0</p>
-                <span>Днів</span>
-              </div>
-
-              <div class="countdonw-el hours-c">
-                <p class="big-text" id="hours">0</p>
-                <span>Годин</span>
-              </div>
-
-              <div class="countdonw-el mins-c">
-                <p class="big-text" id="mins">0</p>
-                <span>Хвилин</span>
-              </div>
-
-              <div class="countdonw-el second-c">
-                <p class="big-text" id="second">0</p>
-                <span>Секунд</span>
+            <div class="counter">
+              <h4 class="counter-title">
+                Віддлік до наступної<br />
+                поїздки
+              </h4>
+  
+              <div class="countdown-container">
+                <div class="countdonw-el days-c">
+                  <p class="big-text" id="days">0</p>
+                  <span>Днів</span>
+                </div>
+  
+                <div class="countdonw-el hours-c">
+                  <p class="big-text" id="hours">0</p>
+                  <span>Годин</span>
+                </div>
+  
+                <div class="countdonw-el mins-c">
+                  <p class="big-text" id="mins">0</p>
+                  <span>Хвилин</span>
+                </div>
+  
+                <div class="countdonw-el second-c">
+                  <p class="big-text" id="second">0</p>
+                  <span>Секунд</span>
+                </div>
               </div>
             </div>
           </div>
@@ -380,78 +376,78 @@
           </div>
 
           <!-- cards on place -->
-          <div class="header-main-aside-cards">
+          <!-- <div class="header-main-aside-cards"> -->
             <!-- card -->
-            <a href="./pages/tour.html" class="header-main-aside-card-1">
-              <h4 class="header-main-aside-card-title">01</h4>
-              <div class="header-main-aside-card-box">
-                <p class="header-main-aside-card-text">
-                  Водопади<br />
-                  Ісландії
-                </p>
-                <svg
-                  id="header-main-aside-card-svg"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="31"
-                  height="16"
-                  viewBox="0 0 31 16"
-                  fill="none"
-                >
-                  <path
-                    d="M30.7071 8.70711C31.0976 8.31658 31.0976 7.68342 30.7071 7.29289L24.3431 0.928932C23.9526 0.538408 23.3195 0.538408 22.9289 0.928932C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM0 9H30V7H0V9Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-            </a>
+            <!-- <a href="./pages/tour.html" class="header-main-aside-card-1"> -->
+            <!-- <h4 class="header-main-aside-card-title">01</h4>
+            <div class="header-main-aside-card-box">
+              <p class="header-main-aside-card-text">
+                Водопади<br />
+                Ісландії
+              </p>
+              <svg
+                id="header-main-aside-card-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="16"
+                viewBox="0 0 31 16"
+                fill="none"
+              >
+                <path
+                  d="M30.7071 8.70711C31.0976 8.31658 31.0976 7.68342 30.7071 7.29289L24.3431 0.928932C23.9526 0.538408 23.3195 0.538408 22.9289 0.928932C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM0 9H30V7H0V9Z"
+                  fill="white"
+                />
+              </svg>
+            </div> -->
+            <!-- </a> -->
 
             <!-- card -->
-            <a href="./pages/tour.html" class="header-main-aside-card-2">
-              <h4 class="header-main-aside-card-title">02</h4>
-              <div class="header-main-aside-card-box">
-                <p class="header-main-aside-card-text">
-                  Казкові<br />
-                  Доломіти
-                </p>
-                <svg
-                  id="header-main-aside-card-svg"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="31"
-                  height="16"
-                  viewBox="0 0 31 16"
-                  fill="none"
-                >
-                  <path
-                    d="M30.7071 8.70711C31.0976 8.31658 31.0976 7.68342 30.7071 7.29289L24.3431 0.928932C23.9526 0.538408 23.3195 0.538408 22.9289 0.928932C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM0 9H30V7H0V9Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-            </a>
+            <!-- <a href="./pages/tour.html" class="header-main-aside-card-2"> -->
+            <!-- <h4 class="header-main-aside-card-title">02</h4>
+            <div class="header-main-aside-card-box">
+              <p class="header-main-aside-card-text">
+                Казкові<br />
+                Доломіти
+              </p>
+              <svg
+                id="header-main-aside-card-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="16"
+                viewBox="0 0 31 16"
+                fill="none"
+              >
+                <path
+                  d="M30.7071 8.70711C31.0976 8.31658 31.0976 7.68342 30.7071 7.29289L24.3431 0.928932C23.9526 0.538408 23.3195 0.538408 22.9289 0.928932C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM0 9H30V7H0V9Z"
+                  fill="white"
+                />
+              </svg>
+            </div> -->
+            <!-- </a> -->
 
             <!-- card -->
-            <a href="./pages/tour.html" class="header-main-aside-card-3">
-              <h4 class="header-main-aside-card-title">03</h4>
-              <div class="header-main-aside-card-box">
-                <p class="header-main-aside-card-text">
-                  Невивченна<br />
-                  Норвегія
-                </p>
-                <svg
-                  id="header-main-aside-card-svg"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="31"
-                  height="16"
-                  viewBox="0 0 31 16"
-                  fill="none"
-                >
-                  <path
-                    d="M30.7071 8.70711C31.0976 8.31658 31.0976 7.68342 30.7071 7.29289L24.3431 0.928932C23.9526 0.538408 23.3195 0.538408 22.9289 0.928932C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM0 9H30V7H0V9Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-            </a>
+            <!-- <a href="./pages/tour.html" class="header-main-aside-card-3"> -->
+            <!-- <h4 class="header-main-aside-card-title">03</h4>
+            <div class="header-main-aside-card-box">
+              <p class="header-main-aside-card-text">
+                Невивченна<br />
+                Норвегія
+              </p>
+              <svg
+                id="header-main-aside-card-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="16"
+                viewBox="0 0 31 16"
+                fill="none"
+              >
+                <path
+                  d="M30.7071 8.70711C31.0976 8.31658 31.0976 7.68342 30.7071 7.29289L24.3431 0.928932C23.9526 0.538408 23.3195 0.538408 22.9289 0.928932C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM0 9H30V7H0V9Z"
+                  fill="white"
+                />
+              </svg>
+            </div> -->
+            <!-- </a -->
           </div>
         </div>
       </header>
@@ -467,20 +463,6 @@
             Велике ущілля<br />
             на острові Гаваї
           </p>
-          <!-- svg arrow -->
-          <svg
-            class="section-tour-container-svg"
-            xmlns="http://www.w3.org/2000/svg"
-            width="41"
-            height="16"
-            viewBox="0 0 41 16"
-            fill="none"
-          >
-            <path
-              d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
-              fill="white"
-            />
-          </svg>
         </div>
 
         <div>
@@ -498,7 +480,7 @@
 
           <div class="section-tour-button">
             <a href="./pages/tour.html" class="section-tour-aside-button"
-              >Дивитися усі</a
+              >Переглянути усі тури</a
             >
           </div>
         </div>
@@ -577,21 +559,6 @@
             Мабуть, це був самий<br />
             кращий відпуск в моєму житті..
           </div>
-
-          <!-- svg arrow -->
-          <svg
-            class="section-feedback-card-containder-svg"
-            xmlns="http://www.w3.org/2000/svg"
-            width="41"
-            height="16"
-            viewBox="0 0 41 16"
-            fill="none"
-          >
-            <path
-              d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
-              fill="white"
-            />
-          </svg>
         </div>
       </section>
 

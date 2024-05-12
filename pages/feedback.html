@@ -10,7 +10,7 @@
     <header class="header">
       <nav class="nav">
         <!-- logo -->
-        <a href="./index.html" id="header-logo">
+        <a href="./../index.html" id="header-logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="160"
@@ -82,34 +82,30 @@
         </div>
 
         <!-- menu -->
-        <div class="header_nav_burger">
+        <div class="header_nav_burger" id="burger">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </nav>
 
-      <!-- menu onclick-->
-      <div class="menu">
-        <h2>Меню</h2>
+    <!-- menu on click -->
+    <div class="menu" id="menu">
+      <div class="menu__aside" id="menu__aside">
+        <h2 class="menu__aside__title">Меню</h2>
 
-        <ul class="menu-view">
-          <a href="./tour.html" class="menu-view-item">
-            <li class="menu-view-item">Переглянути тури</li>
-          </a>
-          <a href="./feedback.html" class="menu-view-item"
-            ><li class="menu-view-item">Відгуки</li></a
+        <div class="menu__aside__links">
+          <a href="../index.html" class="menu__aside__link__item"
+            >Головна Сторінка</a
           >
-          <a href="./contact.html" class="menu-view-item">
-            <li class="menu-view-item">Контакти</li>
-          </a>
-        </ul>
+          <a href="./tour.html" class="menu__aside__link__item">Всі тури</a>
+          <a href="./contact.html" class="menu__aside__link__item">Контакти</a>
+        </div>
       </div>
+    </div>
     </header>
 
     <h2 class="title">Що кажуть про наші подорожі?</h2>
-
-    <hr />
 
     <section class="section-feedback-first">
       <div class="section-feedback-box">
@@ -118,7 +114,7 @@
         <h2 class="section-feedback-title">Анастасія Веснянка</h2>
 
         <p class="section-feedback-text">
-          <i>
+          <p class="center">
             "Японія — країна сакури та традицій,<br />
             яку я завітала весною. <br />
             Перехоплююча краса сакури в Токіо <br />
@@ -129,7 +125,7 @@
             Рекомендую відвідати Кіото та <br />
             зануритися в атмосферу<br />
             старовинних вуличок та чаювання."
-          </i>
+          </p>
         </p>
       </div>
 
@@ -144,25 +140,8 @@
           Мабуть, це була<br />
           найкраща подорож у моєму житті.
         </div>
-
-        <!-- svg arrow -->
-        <svg
-          class="section-feedback-card-containder-svg"
-          xmlns="http://www.w3.org/2000/svg"
-          width="41"
-          height="16"
-          viewBox="0 0 41 16"
-          fill="none"
-        >
-          <path
-            d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
-            fill="white"
-          />
-        </svg>
       </div>
     </section>
-
-    <hr />
 
     <section class="section-feedback-second">
       <div class="section-feedback-box">
@@ -171,7 +150,7 @@
         <h2 class="section-feedback-title">Олександр Мандрильник</h2>
 
         <p class="section-feedback-text">
-          <i>
+          <p class="center">
             "Ісландія — країна приголомшливої природи <br />
             та величезних водоспадів. Подорожуючи <br />
             навколо острова, я відчував магію водночас <br />
@@ -181,14 +160,14 @@
             северними вогнями у Ватнаюйокудлі. <br />
             Рекомендую для любителів пригод <br />
             та неймовірних пейзажів!"
-          </i>
+          </p>
         </p>
       </div>
 
       <!-- feedback img -->
       <div class="section-feedback-card-second">
         <p class="section-feedback-card-feedback">
-          7 липня 20233<br />
+          7 липня 2023<br />
           <span class="section-feedback-card-country"> Ісландія </span>
         </p>
 
@@ -196,25 +175,8 @@
           Мабуть, це була<br />
           найкраща подорож у моєму житті.
         </div>
-
-        <!-- svg arrow -->
-        <svg
-          class="section-feedback-card-containder-svg"
-          xmlns="http://www.w3.org/2000/svg"
-          width="41"
-          height="16"
-          viewBox="0 0 41 16"
-          fill="none"
-        >
-          <path
-            d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
-            fill="white"
-          />
-        </svg>
       </div>
     </section>
-
-    <hr />
 
     <section class="section-feedback-three">
       <div class="section-feedback-box">
@@ -223,7 +185,7 @@
         <h2 class="section-feedback-title">Луїза Сонячна</h2>
 
         <p class="section-feedback-text">
-          <i>
+          <p class="center">
             "Італія — країна, що заворожує своєю <br />
             культурою та смачною їжею. <br />
             Відвідавши Рим, Флоренцію та Венецію, <br />
@@ -232,9 +194,7 @@
             історією, а архітектурні шедеври, <br />
             такі як Колізей та Страсбурзька куля, <br />
             залишають незабутні враження. <br />
-            А, звісно, італійська піца і гелато <br />
-            — це справжній рай для смакування!"
-          </i>
+          </p>
         </p>
       </div>
 
@@ -249,21 +209,6 @@
           Мабуть, це була<br />
           найкраща подорож у моєму житті.
         </div>
-
-        <!-- svg arrow -->
-        <svg
-          class="section-feedback-card-containder-svg"
-          xmlns="http://www.w3.org/2000/svg"
-          width="41"
-          height="16"
-          viewBox="0 0 41 16"
-          fill="none"
-        >
-          <path
-            d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
-            fill="white"
-          />
-        </svg>
       </div>
     </section>
 

@@ -11,6 +11,8 @@
   --light-blue-text: #03a9f4;
 
   --background-grey: #f8f8f8;
+
+  --title-size: 48px;
 }
 
 * {
@@ -25,8 +27,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding-right: 5rem;
-  padding-left: 5rem;
+  padding-right: 20rem;
+  padding-left: 20rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav {
@@ -101,80 +104,80 @@
 .header_nav_burger.active span:nth-of-type(2) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(45deg);
+  background-color: #000;
 }
 .header_nav_burger.active span:nth-of-type(3) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(-45deg);
+  background-color: #000;
 }
 
 /* active menu */
 .menu {
-  transform: translateY(-400%);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.menu__aside {
   position: absolute;
-  right: 5rem;
-  top: 5rem;
-  background: none;
-  transition: 333ms ease-in-out;
+  background-color: #fff;
+  width: 25%;
+  height: 100%;
+  right: -100%;
+  top: 0;
+  transition: right 0.5s ease;
+  z-index: 1000;
 }
 
-.menu li,
-ul {
-  list-style: none;
-  padding: 0;
+.kol {
+  right: 0%;
 }
 
-.menu.active {
-  transform: translateY(0);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--white);
-  border-radius: 2rem;
-  width: 22rem;
-  height: 24rem;
-}
-
-.menu h2 {
+.menu__aside__title {
   text-align: center;
-  margin-top: 0.3rem;
-  color: #03a9f4;
-  padding-top: 0.4rem;
-
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 2.8rem;
+  margin-top: 2.4rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
-.menu-view {
-  margin-top: 0.4rem;
-  list-style: none;
+.menu__aside__links {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.menu-view-item {
-  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+}
+
+.menu__aside__link__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  transition: 333ms;
   text-align: center;
   width: 100%;
-  height: 2.6rem;
-
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 2.8rem;
-  text-decoration: none;
-  color: var(--white);
-  transition: 333ms ease-in;
+  height: 3rem;
 }
 
-.menu-view-item:hover {
+.menu__aside__link__item:hover {
   background-color: #03a9f4;
+  color: #fff;
 }
+
 /* Counter */
 .counter {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
+  margin-top: 30rem;
+  margin-bottom: 2rem;
 }
 
 .counter-title {
@@ -185,7 +188,7 @@ ul {
   font-size: 1.3rem;
   line-height: 2rem;
   text-decoration: none;
-  color: #03a9f4;
+  color: #000;
 }
 
 .countdown-container {
@@ -201,7 +204,7 @@ ul {
 .countdonw-el span {
   font-size: 0.8rem;
   font-weight: 400;
-  color: var(--white);
+  color: #000;
   padding-bottom: 2rem;
 }
 
@@ -211,7 +214,7 @@ ul {
   font-weight: 400;
   line-height: 2rem;
   text-decoration: none;
-  color: var(--white);
+  color: #000;
 }
 
 /* Main */
@@ -223,9 +226,9 @@ ul {
 /* Header title caption */
 .header-title {
   color: var(--white);
-  font-size: 4.3rem;
+  font-size: var(--title-size);
   font-weight: 700;
-  line-height: 6rem;
+  line-height: 4rem;
 
   margin-top: 4rem;
 }
@@ -249,7 +252,7 @@ ul {
 /* button */
 .header__button {
   display: inline-block;
-  border-radius: 2.3rem;
+  border-radius: 2rem;
   background: var(--orange-acent);
   border: 1px solid var(--orange-acent);
 
@@ -261,8 +264,9 @@ ul {
   text-decoration: none;
   white-space: nowrap;
 
-  padding: 2rem 5rem;
+  padding: 1.5rem 4rem;
   align-self: center;
+  animation: button 1s ease-in infinite;
   transition: 333ms;
 }
 
@@ -271,6 +275,7 @@ ul {
   border: 1px solid var(--white);
   color: var(--white);
 }
+
 /* form-reg */
 .form__reg {
   display: none;
@@ -712,11 +717,8 @@ ul {
     font-size: 1rem;
   }
 
-  .menu {
-    right: 4rem;
-    top: 5rem;
-    width: 20rem;
-    height: 22rem;
+  .menu__aside {
+    width: 40%;
   }
 }
 
@@ -727,6 +729,9 @@ ul {
 
   .header-main-aside-card-3 {
     display: none;
+  }
+  .menu__aside {
+    width: 40%;
   }
 }
 
@@ -740,6 +745,10 @@ ul {
     gap: 2rem;
 
     padding-left: 8rem;
+  }
+
+  .menu__aside {
+    width: 40%;
   }
 }
 
@@ -803,10 +812,18 @@ ul {
   .header-main-aside-card-text {
     font-size: 0.8rem;
   }
+
+  .menu__aside {
+    width: 55%;
+  }
 }
 @media (max-width: 860px) {
   .header-main-aside-card-2 {
     display: none;
+  }
+
+  .menu__aside {
+    width: 75%;
   }
 }
 
@@ -865,13 +882,6 @@ ul {
     font-size: 0.8rem;
   }
 
-  .menu {
-    right: 3rem;
-    top: 5rem;
-    width: 20rem;
-    height: 22rem;
-  }
-
   .form__reg__container {
     width: 20rem;
     padding: 0;
@@ -901,11 +911,19 @@ ul {
   .form__reg__container__img {
     display: none;
   }
+
+  .menu__aside {
+    width: 80%;
+  }
 }
 
 @media (max-width: 600px) {
   .header-main-aside-card-1 {
     display: none;
+  }
+
+  .menu__aside {
+    width: 90%;
   }
 }
 
@@ -937,12 +955,8 @@ ul {
     font-size: 0.6rem;
   }
 
-  .menu {
-    left: 1rem;
-    right: 2rem;
-    top: 5rem;
-    width: 20rem;
-    height: 22rem;
+  .menu__aside {
+    width: 100%;
   }
 }
 
@@ -1041,9 +1055,9 @@ ul {
 .section-tour-aside-button {
   display: inline-block;
   margin-top: 3rem;
-  padding: 2rem 4rem;
+  padding: 1.5rem 4rem;
   border: 1px solid var(--orange-acent);
-  border-radius: 2.3rem;
+  border-radius: 2rem;
 
   color: var(--orange-acent);
   text-decoration: none;
@@ -1256,9 +1270,9 @@ ul {
 }
 
 #btn {
-  padding: 2rem 2rem;
+  padding: 1.5rem 4rem;
   background-color: var(--orange-acent);
-  border-radius: 4rem;
+  border-radius: 2rem;
   border: 1px solid var(--orange-acent);
 
   color: #311;
@@ -1318,16 +1332,25 @@ ul {
   }
 
   #btn {
-    padding: 1rem 1.8rem;
+    padding: 0.9rem 1.8rem;
     font-size: 1rem;
   }
 }
 
 @media (max-width: 1084px) {
+  .section-form {
+    gap: 1rem;
+  }
+
+  .section-form-text {
+    margin: 0;
+  }
+
   .section-form-text-title {
     font-size: 1.8rem;
     line-height: 2.4rem;
     margin-bottom: 0.8rem;
+    text-align: center;
   }
 
   .section-form-text-caption {
@@ -1384,9 +1407,9 @@ ul {
 .section-feedback-button {
   display: inline-block;
   margin-top: 3rem;
-  padding: 2rem 4rem;
+  padding: 1.5rem 4rem;
   border: 1px solid var(--orange-acent);
-  border-radius: 2.3rem;
+  border-radius: 2rem;
 
   color: var(--orange-acent);
   text-decoration: none;
@@ -1593,7 +1616,7 @@ ul {
 
 .footer {
   background-color: #f7f7f7;
-  padding: 4rem 10rem;
+  padding: 4rem 20rem;
   display: flex;
   justify-content: space-between;
   gap: 2rem;

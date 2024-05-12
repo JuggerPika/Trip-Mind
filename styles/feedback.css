@@ -19,10 +19,8 @@
   box-sizing: border-box;
 }
 
-hr {
-  border: 0.1px solid var(--black-text);
-  margin-left: 8rem;
-  margin-right: 8rem;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Header */
@@ -31,8 +29,8 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
 
-  padding-right: 5rem;
-  padding-left: 5rem;
+  padding-right: 20rem;
+  padding-left: 20rem;
 }
 
 .nav {
@@ -107,118 +105,73 @@ hr {
 .header_nav_burger.active span:nth-of-type(2) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(45deg);
+  background-color: #000;
 }
 .header_nav_burger.active span:nth-of-type(3) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(-45deg);
+  background-color: #000;
 }
 
 /* active menu */
 .menu {
-  transform: translateY(-400%);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.menu__aside {
   position: absolute;
-  right: 5rem;
-  top: 5rem;
-  transition: 333ms ease-in-out;
+  background-color: #fff;
+  width: 25%;
+  height: 100%;
+  right: -100%;
+  top: 0;
+  transition: right 0.5s ease;
+  z-index: 1000;
 }
 
-.menu li,
-ul {
-  list-style: none;
-  padding: 0;
+.kol {
+  right: 0%;
 }
 
-.menu.active {
-  background-color: lightblue;
-  transform: translateY(0);
-  backdrop-filter: blur(1px);
-  border: 1px solid var(--white);
-  border-radius: 2rem;
-  width: 22rem;
-  height: 14rem;
-}
-
-.menu h2 {
+.menu__aside__title {
   text-align: center;
-  margin-top: 0.3rem;
-  color: #03a9f4;
-  padding-top: 0.4rem;
-
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 2.8rem;
+  margin-top: 2.4rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
-.menu-view {
-  margin-top: 0.4rem;
-  list-style: none;
+.menu__aside__links {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.menu-view-item {
-  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+}
+
+.menu__aside__link__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  transition: 333ms;
   text-align: center;
   width: 100%;
-  height: 2.6rem;
-
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 2.8rem;
-  text-decoration: none;
-  color: var(--white);
-  transition: 333ms ease-in;
+  height: 3rem;
 }
 
-.menu-view-item:hover {
+.menu__aside__link__item:hover {
   background-color: #03a9f4;
-}
-/* Counter */
-.counter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  color: #fff;
 }
 
-.counter-title {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 500;
-  text-align: center;
-  font-size: 1.3rem;
-  line-height: 2rem;
-  text-decoration: none;
-  color: #03a9f4;
-}
-
-.countdown-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.countdonw-el {
-  text-align: center;
-}
-
-.countdonw-el span {
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: var(--white);
-  padding-bottom: 2rem;
-}
-
-.big-text {
-  margin: 0 2rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 2rem;
-  text-decoration: none;
-  color: var(--white);
-}
 @media (max-width: 750px) {
   .header-nav-link {
     display: none;
@@ -324,7 +277,7 @@ ul {
 }
 
 .section-feedback-title {
-  color: var(--black-text);
+  color: var(--orange-acent);
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -338,12 +291,12 @@ ul {
   text-align: center;
 }
 
-.section-feedback-card-first:hover {
-  transform: scale(1.1);
+.center {
+  text-align: center;
 }
-.section-feedback-card-second:hover {
-  transform: scale(1.1);
-}
+
+.section-feedback-card-first:hover,
+.section-feedback-card-second:hover,
 .section-feedback-card-three:hover {
   transform: scale(1.1);
 }
@@ -379,12 +332,17 @@ ul {
   cursor: pointer;
 }
 
-@media (max-width: 1020px) {
-  hr {
-    margin-left: 2rem;
-    margin-right: 2rem;
+@media (max-width: 1440px) {
+  .menu__aside {
+    width: 40%;
   }
 
+  .header_nav_burger {
+    right: 3rem;
+  }
+}
+
+@media (max-width: 1020px) {
   .section-feedback-first {
     gap: 3rem;
     margin-top: 3rem;
@@ -425,6 +383,10 @@ ul {
     width: 30rem;
     padding: 1rem;
     font-size: 0.8rem;
+  }
+
+  .header-nav-link-item {
+    display: none;
   }
 }
 
@@ -520,7 +482,7 @@ ul {
 
 .footer {
   background-color: #f7f7f7;
-  padding: 4rem 10rem;
+  padding: 4rem 20rem;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
